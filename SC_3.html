@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>VALIDACIONES EN FORMULARIOS HTML</title>
+  </head>
+  <body>
+  <h2>VALIDACION PARA CAMPO REQUERIDO</h2>
+  <form>
+  <label>Nombre:</label>
+  <input type="text" name="txtNombre" required>
+  <input type="submit" value="Enviar">
+  </form>
+  <br>
+  <br>
+  <h2>VALIDACION PARA UN PATRON ESPECIFICO</h2>
+  <form>
+  <label>Correo:</label>
+  <input type="text" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" name="email" required>
+  <input type="submit" value="Verificar">
+  </form>
+  <br>
+  <br>
+  <h2>VALIDACION PARA UN TEXTO CON LONGITUD MAXIMA</h2>
+  <form>
+  <input type="text" name="texto" placeholder="Debes introducir un texto menor a 50 caracteres"  maxlength="50"  required>
+  <input type="submit" value="Validar">
+  </form>
+  <br>
+  <br>
+  <h2>VALIDACION PARA QUE UN ARCHIVO SEA OBLIGATORIO</h2>
+  <form>
+  <input type="file" name="texto" required>
+  <input type="submit" value="Validar">
+  </form>
+  <br>
+  <br>
+  <h2>VALIDACION OBLIGATORIA CON FORMATO DE TWITTER</h2>
+  <form>
+  <input type="text" pattern="^@[A-Za-z0-9_]{1,15}$">
+  <input type="submit" value="Validar">
+  </form>
+  </body>
+</html>
